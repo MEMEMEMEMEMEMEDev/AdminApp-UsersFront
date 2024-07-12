@@ -5,6 +5,10 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const example1 = () => {
+    console.log("Ola");
+  }
+  //example1()
 
   return (
     <>
@@ -20,6 +24,9 @@ function App() {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
+        </button>
+        <button onClick={() => {example1()}}>
+          <p className='rojo'>???</p>
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
